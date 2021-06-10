@@ -1,0 +1,288 @@
+body {
+    background-image: linear-gradient(to right, #03032e, #030d2c);
+}
+
+.container::before {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: inherit;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+p {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #ca3333;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    background:  #09664a;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.sidebar-heading {
+    background: #09664a;
+}
+
+.salutation {
+    margin-top: 130px;
+    padding: 15px;
+}
+
+#sidebar ul li a:hover {
+    color: #7385d5;
+    background: #fff;
+}
+
+#sidebar ul il.activie>a,
+a[aria-expended="true"] {
+    color: #7a8288;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar-wrapper .list-group {
+    width: 8rem;
+    background: #09664a;
+}
+#menu-toggle { background: #09664a;}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background: #6d7fcc;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+.border-bottom {
+    background: #4139b1;
+}
+
+.sal {
+    font-family: 'fredeka one';
+    width: 150px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #02238f;
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.boutton:hover {
+    background: #fff;
+}
+
+.boutton:hover {
+    color: #fff;
+}
+
+.boutton:hover>i {
+    color: #fff;
+}
+
+i {
+    color: #fff;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+    margin-right: 16px;
+    transition: all .5s ease;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.tab {
+    margin: 20px;
+    height: 250px;
+    overflow: auto scroll;
+}
+.scrollable{height:635px;
+    width: 128px;
+
+         }
+
+.tab_vente {
+    margin: 20px;
+    height: 500px;
+    overflow: scroll;
+}
+
+#content {
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    color: #d1d5e0;
+}
+
+.form input[type=text],
+.form input[type=number],
+.form input[type=email],
+.form input[type=date],
+.form select,
+.form table {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    color: #fff
+}
+
+h4 {
+    font-size: 30px;
+    color: #314f5e;
+    margin: 25px;
+}
+
+h5 {
+    color: white;
+}
+
+form {
+    margin: 50px;
+}
+
+.form button[type=submit],
+.form input[type=reset] {
+    border: none;
+    height: 40px;
+    outline: none;
+    font-size: 15px;
+    background-color: darkgrey;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.swal-modal {
+    border: 3px solid white;
+    background: url(logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #03032e;
+}
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #3a9770;
+    font-size: 12px;
+    border: 1px solid #3a9770;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-title {
+    color: white;
+}
+
+.swal-text {
+    color: #F0E1A1;
+}
+
+#montant_des_credit {
+    font-size: 30px;
+    color: #742c2c;
+    font-weight: bold;
+}
+
+#montant_des_impayer {
+    font-size: 30px;
+    color: #742c2c;
+    font-weight: bold;
+}
+
+#montant_produit {
+    font-size: 30px;
+    color: #742c2c;
+    font-weight: bold;
+}
+
+#contient_total {
+    font-size: 30px;
+    color: #742c2c;
+    font-weight: bold;
+}
+.invoice {
+    margin-bottom: 15px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+ 
+    padding: 0 17px;
+    background: rgba(56, 104, 112, 0.4);
+  }
+  .border {
+    border: 1px solid #e5e5e5;
+  }
+  

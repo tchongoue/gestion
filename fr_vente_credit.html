@@ -1,0 +1,154 @@
+
+    <div class="container " >
+                        <div class="row" >
+                            <div  class="col-md-8" >
+                               
+                                   
+                                    <div class="form">
+                                      <div>
+                                       
+                                        <h4 >Fiche vente credit</h4> 
+                                      </div>
+                                      <div >
+                                        <div class="form-group row" >
+                                          <label for="Quantite" class="col-sm-2 col-form-label">Quantite :</label>
+                                          <div class="col-sm-10">
+                                            <input type="text" required class="form-control" id="Quantite" onKeyUp="txt_Quantite()"  placeholder=" Quantite">
+                                          </div>
+                                         
+                                         </div>
+                                         <div class="form-group row" >
+                                          <label class="col-sm-2 col-form-label">Produits:</label>
+                                          <div class="col-sm-8">
+                                            <select  id="select_produit" onchange="select()" class="form-control">
+                                                
+                                                </select>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <div id="montant_produit"></div>
+                                          </div>
+                                         
+                                         </div>
+                                         <div class="form-group row" >
+                                            <label for="Prix_unitaire" class="col-sm-2 col-form-label">Prix unitaire:</label>
+                                            <div class="col-sm-10">
+                                              <input type="text" required class="form-control" id="Prix_unitaire" name="Prix unitaire" onKeyUp="txt_Prix_unitaire()"   placeholder="Prix unitaire">
+                                            </div>
+                                           
+                                           </div>
+                                           <div class="form-group row" >
+                                            <label class="col-sm-2 col-form-label">Client:</label>
+                                            <div class="col-sm-10">
+                                              <select  id="select_client" class="form-control">
+                                                  
+                                                  </select>
+                                            </div>
+                                           
+                                           </div>
+                                           <div class="form-group row" >
+                                            <label for="date" class="col-sm-2 col-form-label"> date de paiement:</label>
+                                            <div class="col-sm-10">
+                                              <input type="date"  class="form-control" id="date_paiement" >
+                                            </div>
+                                           
+                                           </div>
+                                           <div class="row justify-content-around">
+                                          
+                                            <div class="col-xs-2 offset-xs-1">
+                                               <button type="submit"  class="btn btn-success" id="valider">
+                                                 valider
+                                               </button>
+                                             </div>
+                                             <div class="col-xs-2 offset-xs-1">
+                                               <button type="submit" class="btn btn-success" id="Supprimer" >
+                                                 Supprimer
+                                               </button>
+                                             </div>
+                                             <div class="col-xs-2 offset-xs-1">
+                                               <button type="submit" class="btn btn-success"  id="Imprimer">
+                                                imprimer
+                                               </button>
+                                             </div>
+                                             <div class="col-xs-2 ">
+                                               <button type="submit" class="btn btn-success"  id="refresh_tabl">
+                                              <img src="img/refresh_tableau.png" width="30" height="30" alt="">
+                                               </button>
+                                             </div>
+                                           </div>
+                                           
+                                        <br>
+                                        <div id="facture" >
+                                            <div id="invoice" class="border">
+                                             
+                                              <div class="col-md-12 invoice text-center " >
+                                                <h2 style="color: #09664a;">Gstructure</h2>
+                                              </div>
+                                              <h5 class="text-right"style="color: #030705;"> mr:<span id="nom_client_facture"></span> </h5>
+                                              <p class="text-right"><strong style="color: #030705;">Date:</strong> <input id="Aujourdhui" type="date" name="date" value="" readonly>
+                                                </p>
+                                                <p class="text-right"><strong style="color: #022a17;">Date de paiement:</strong> <span id="date_reglement"></span>
+                                                </p>
+                                              
+                                         
+                                                <table   id="table_facture" class="table table-dark table-hover table-bordered">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">#</th>
+                                                      <th scope="col">Produit</th>
+                                                      <th scope="col">Quantite</th>
+                                                      <th scope="col">prix unitaire</th>
+                                                     
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody id="idTable">
+                                                   
+                                                    
+                                                   
+                                                  </tbody>
+                                                </table>
+                                              
+                                      
+                                              
+                                              <h5 class="text-right" id="contient_total" >Total:<span id="panier"></span> </h5>
+                                          
+                                          </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                            </div>
+                            <div  class="col-md-4" >
+                               
+                              <div  class="form">
+                                <div>
+                                  <h4>Liste des ventes a credit de se jour:<span id="sum"></span></h4> 
+                                </div>
+                                <div >
+                                  <div   class="tab_vente" >
+                                  <table class="table table-dark table-hover table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Prouit</th>
+                                        <th scope="col">Quantite</th>
+                                        <th scope="col">Montant</th>
+                                      
+                                       
+                                      </tr>
+                                    </thead>
+                                    <tbody id="vente_du_jour">
+                                      
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                                  </div>
+
+                                        </div>
+
+                                  
+                            </div>
+                            
+                        </div>
+    </div>
+    <script src="js/html2pdf.min.js"></script>
+    <script src="js/js_vente_credit.js"></script>

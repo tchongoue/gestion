@@ -1,0 +1,156 @@
+
+ 
+                        <div class="row" >
+                                        <div class="col-md-6" >
+                                                         
+                                                              <div  class="form">
+                                                                <div>
+                                                                  <h4 >Ventes aux comptants</h4> 
+                                                                </div  >
+                                                                <div >
+                                                                  <div>
+                                                                    <div class="row" >
+                                                                    <label for="Debut" class="col-sm-2 col-form-label">Debut:</label>
+                                                                    <div class="col-sm-3">
+                                                                      <input type="date" required class="form-control" id="Debut"  >
+                                                                    </div>
+                                                                    <label for="Debut" class="col-sm-2 col-form-label">Fin:</label>
+                                                                    <div class="col-sm-3">
+                                                                      <input type="date" required class="form-control" id="Fin" >
+                                                                    </div>
+                                                                    <div class="col-sm-2 ">
+                                                                        <button type="submit" id="search" class="btn btn-success">
+                                                                        search
+                                                                        </button>
+                                                                      </div>
+                                                                   </div>
+                                                                  </div>
+                                                                  <div   class="tab" >
+                                                                    <table  class="table table-dark table-hover table-bordered">
+                                                                      <thead>
+                                                                        <tr>
+                                                                          <th scope="col">produit</th>
+                                                                          <th scope="col">quantite</th>
+                                                                          <th scope="col">prix d'achat</th>
+                                                                          <th scope="col">prix de vente</th>
+                                                                        </tr>
+                                                                      </thead>
+                                                                      <tbody id="table_element_comptant">
+                                                                     
+                                                                       
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </div>
+                                                                  <div class="form-group row" >
+                                                                    <label for="Montant" class="col-sm-4 col-form-label">Montant :<span id="Montant"></span> fcfa</label>
+                                                                    
+                                                                        <label for="Bénéfice" class=" offset-sm-4   col-sm-4 col-form-label">Bénéfice : <span id="Bénéfice"></span>fcfa</label>
+                                                                    
+                                                                   
+                                                                   </div>
+                                                                  <br>
+                                                                  <div >
+                                                                    <div class="form-group row" >
+                                                                        <label for="Montant" class="col-sm-6 col-form-label">Chiffre d'affaire total :</label>
+                                                                        
+                                                                            <label for="Bénéfice : 0fcfa" class="   col-sm-6 col-form-label">  <span id="ca"></span>fcfa</label>
+                                                                        
+                                                                       </div>
+                                                                       <div class="form-group row" >
+                                                                        <label for="Montant" class="col-sm-6 col-form-label">Total bénéfice sur vente :</label>
+                                                                        
+                                                                            <label for="Bénéfice : 0fcfa" class="   col-sm-6 col-form-label"> <span id="benefice_sur_tous_les_vente"></span>fcfa</label>
+                                                                        
+                                                                       </div>
+                                                                       <div class="form-group row" >
+                                                                        <label for="Montant" class="col-sm-6 col-form-label">Total impayé crédit fournisseur :</label>
+                                                                        
+                                                                            <label for="Bénéfice : 0fcfa" class="   col-sm-6 col-form-label"> <span id="montant_des_credi"></span>fcfa</label>
+                                                                        
+                                                                       </div>
+                                                                       <div class="form-group row" >
+                                                                        <label for="Montant" class="col-sm-6 col-form-label">Total dépense de la période :</label>
+                                                                        
+                                                                            <label for="Bénéfice : 0fcfa" class="   col-sm-6 col-form-label"> <span id="depense"></span>fcfa</label>
+                                                                        
+                                                                       </div>
+                                                                       <div class="form-group row" >
+                                                                        <label for="Montant" class="col-sm-6 col-form-label">Bénéfice à recouvrir:</label>
+                                                                        
+                                                                            <label for="" class="   col-sm-6 col-form-label"> <span id="benefice_impayé"></span>fcfa</label>
+                                                                        
+                                                                       </div>
+                                                                      
+                                                                      
+                                                                    
+                                                                  </div>
+                                                                  </div>
+                                                                  </div>
+
+                                                            
+                                     </div>
+                                     <div class="col-md-6" >
+                                  
+                                        <div  class="form">
+                                          <div>
+                                            <h4>Vente a crédit</h4> 
+                                          </div>
+                                          <div >
+                                           
+                                            <div   class="tab" >
+                                            <table class="table table-dark table-hover table-bordered">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Nom</th>
+                                                    <th scope="col">montant</th>
+                                                    <th scope="col">date de remboursement</th>
+                                                    <th scope="col">benefice</th>
+                                                    <th scope="col">status</th>
+                                                   
+                                                  </tr>
+                                                </thead>
+                                                <tbody id="table_element_credit">
+                                                                     
+                                                                       
+                                                </tbody>
+                                              </table>
+                                              </div>
+                                             <br>
+                                            </div>
+                                            <div >
+                                                <div class="form-group row" >
+                                                    <label for="Montant" class="col-sm-6 col-form-label">Montant payé  :</label>
+                                                    
+                                                        <label for="" class="   col-sm-6 col-form-label"> <span id="payé"></span>fcfa</label>
+                                                    
+                                                   </div>
+                                                   <div class="form-group row" >
+                                                    <label for="Montant" class="col-sm-6 col-form-label">Montant impayé  :</label>
+                                                    
+                                                        <label for="" class="   col-sm-6 col-form-label"> <span id="impayé"></span>fcfa</label>
+                                                    
+                                                   </div>
+                                                   <div class="form-group row" >
+                                                    <label for="Montant" class="col-sm-6 col-form-label">Bénéfice reçus   :</label>
+                                                    
+                                                        <label for="" class="   col-sm-6 col-form-label"> <span id="benefice_payé"></span>fcfa</label>
+                                                    
+                                                   </div>
+                                                   <div class="form-group row" >
+                                                    <label for="Montant" class="col-sm-6 col-form-label">Bénéfice à recouvrir:</label>
+                                                    
+                                                        <label for="" class="   col-sm-6 col-form-label"> <span id="benefice_impayé"></span>fcfa</label>
+                                                    
+                                                   </div>
+                                              
+                                            </div>
+                                            </div>
+                                            </div>
+
+                                     
+                                      
+                                      
+               </div>
+                        </div>
+                        <script src="js/js_invantaire.js"></script>
+       

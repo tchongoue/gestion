@@ -1,0 +1,160 @@
+                                <div class="row" >
+                                                          <div class="col-lg-6" >
+                                                          
+                                                             
+                                                              <div class="form"> 
+                                                                
+                                                                <div >
+                                                                  
+                                                                  <h4 >Fiche Fournisseur</h4>
+                                                                 
+                                                                </div>
+                                                                <div >
+                                                                
+                                                                  <div class="form-group row" >
+                                                                   
+                                                                    <label for="nom" class="col-sm-4 col-form-label" >Nom Fournisseur:</label>
+                                                                    <div class="col-sm-8">
+                                                                      <input type="text" required class="form-control" id="nom" name="nom" placeholder=" nom fournisseur">
+                                                                     
+                                                                    </div>
+                                                                   
+                                                                   </div>
+                                                                   <div class="form-group row" >
+                                                                    <label for="Localisation" class="col-sm-4 col-form-label">Localisation:</label>
+                                                                    <div class="col-sm-8">
+                                                                      <input type="text" required class="form-control" id="Localisation" name="Localisation" placeholder="localisation fournisseur">
+                                                                    </div>
+                                                                   
+                                                                   </div>
+                                                                   <div class="form-group row" >
+                                                                    <label for="Contact" class="col-sm-4 col-form-label">Contact:</label>
+                                                                    <div class="col-sm-8">
+                                                                      <input type="text" required class="form-control" id="Contact" onKeyUp="txt_Contact()" name="Contact" placeholder="Contact fournisseur">
+                                                                    </div>
+                                                                   
+                                                                   </div>
+                                                                   <div class="row justify-content-around">
+                                                                    
+                                                                   <div class="col-xs-2 offset-xs-2">
+                                                                      <button type="submit" class="btn btn-success" id="valider">
+                                                                        valider
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="col-xs-2 offset-xs-2">
+                                                                      <button type="submit" class="btn btn-success" id="Supprimer">
+                                                                        Supprimer
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="col-xs-4">
+                                                                      <button type="submit" class="btn btn-success" id="modifier">
+                                                                        modifier
+                                                                      </button>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div >
+                                                                    <div   class="tab">
+                                                                      <table  class="table table-dark table-hover table-bordered">
+                                                                        <thead>
+                                                                          <tr>
+                                                                            <th scope="col">#</th>
+                                                                            <th scope="col">Nom</th>
+                                                                            <th scope="col">Localisation</th>
+                                                                            <th scope="col">Contact</th>
+                                                                           
+                                                                          </tr>
+                                                                        </thead>
+                                                                        <tbody id="table">
+                                                                         
+                                                                          
+                                                                         
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                  </div>
+                                                                  </div>
+                                                                  </div>
+
+                                                       
+                                                            
+                                                          </div>
+                                    <div class="col-lg-6" >
+                                  
+                                       
+                                            <h4>Fiche Credit Fournisseur</h4> 
+                                          
+                                          <div class="form">
+                                            <div class="form-group row" >
+                                              <label  class="col-sm-4 col-form-label">Nom Fournisseur:</label>
+                                              <div class="col-sm-8">
+                                                <select id="select"  class="form-control">
+                                                   
+                                                    
+
+                                                    </select>
+                                              </div>
+                                             
+                                             </div>
+                                             <div class="form-group row" >
+                                              <label for="montant_credit_fournisseur" class="col-sm-4 col-form-label">montant:</label>
+                                              <div class="col-sm-8">
+                                                <input type="text" required class="form-control" id="montant_credit_fournisseur" onKeyUp="txt_montant_credit_fournisseur()" name="montant" placeholder="montant credit">
+                                              </div>
+                                             
+                                             </div>
+                                             <div class="form-group row" >
+                                              <label for="date" class="col-sm-4 col-form-label">date:</label>
+                                              <div class="col-sm-8">
+                                                <input type="date"  class="form-control" id="date" name="date" >
+                                              </div>
+                                             
+                                             </div>
+                                             <div class="row justify-content-around">
+                                              
+                                             <div class="col-xs-2 offset-xs-2">
+                                                <button type="submit" class="btn btn-success" id="valider_credit" >
+                                                  valider
+                                                </button>
+                                              </div>
+                                              <div class="col-xs-2 offset-xs-2">
+                                                <button type="submit" class="btn btn-success" id="Supprimer_credit_fournisseur">
+                                                  Supprimer
+                                                </button>
+                                              </div>
+                                              <div class="col-xs-4">
+                                                <button type="submit" class="btn btn-success" id="payer">
+                                                  payer
+                                                </button>
+                                              </div>
+                                            </div>
+                                            <div>
+                                              <div   class="tab" >
+                                                <table  class="table table-dark table-hover table-bordered">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">#</th>
+                                                      <th scope="col">Nom</th>
+                                                      <th scope="col">Montant</th>
+                                                      <th scope="col">Date</th>
+                                                      <th scope="col">Status</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody id="table_credit">
+                                                 
+                                                   
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                           <label id="montant_des_impayer">montant des impayer:</label><span id="montant_des_credit"></span>
+                                            </div>
+                                            </div>
+
+                                
+                                      
+                                      
+                                    </div>
+                       
+                             </div>
+    
+    <script src="js/js_fournisseur.js"></script>
+    <script src="js/js_credit_fournisseur.js"></script>

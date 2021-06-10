@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="swup.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="font_awesone/css/all.min.css"rel="stylesheet">
+  
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
+  <link href="w3.css" rel="stylesheet">
+ 
+  <!-- <link rel="import" href="date.html"> -->
+
+
+</head>
+
+<body>
+   
+  <div include-html="date.html"></div>
+
+
+
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="w3.js"></script>
+  <script>
+    // w3IncludeHTML();
+  </script>
+  <!-- Menu Toggle Script -->
+  <script>
+    includeHTML()
+
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            file = elmnt.getAttribute("include-html");
+            if (file) {
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                      elmnt.removeAttribute("include-html");
+                      w3.includeHTML(cb);
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                return;
+            }
+        }
+    }
+  </script>
+
+</body>
+
+</html>

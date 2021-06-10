@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GESTION</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom styles for this template -->
+
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+    <script src="js/SweetAlert.min.js"></script>
+    <script src="font_awesone/js/all.min.js"></script>
+    <link href="font_awesone/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+
+        <nav id="sidebar">
+            <div class="bg-light border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading"> <img src="img/logo.png" alt="logo">
+                    <div class="scrollable">
+                        <div class="list-group list-group-flush">
+                            <ul class="lisst-unstyled components">
+
+                               
+                                <li>
+                                    <a href="#fr_connect"  class=" brice btn boutton ">  <img src="img/home.png" width="30" height="30" alt="logo"> Utili / Struc  </a>
+                                </li>
+                                <li>
+                                    <a href="#salutation"></a>
+                                </li>
+                                <li>
+                                    <a href="#fr_fournisseur" id="fournisseur" class=" brice btn boutton "> <img src="img/fournisseur.png" alt="logo">Fournisseurs </a>
+                                </li>
+                                <li>
+                                    <a href="#fr_client" class=" brice btn boutton ">  <img src="img/client.png" alt="logo">Clients</a>
+                                </li>
+                                <li>
+                                    <a href="#fr_stock" class="brice btn boutton "><img src="img/stock.png" alt="logo">Stocks</a>
+                                </li>
+                                <li>
+                                    <a href="#fr_stock_securite" class="brice btn boutton "><img src="img/stock.png" alt="logo">Stocks securite</a>
+                                </li>
+                                <li>
+                                    <a href="#fr_achat" class="brice btn boutton"> <img src="img/achat.png" alt="logo">Achat produits</a>
+                                </li>
+                                <li>
+                                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle brice btn boutton"> <img src="img/vente_content.png" alt="logo">Ventes </a>
+                                    <ul class="collapse lisst-unstyled" id="pageSubmenu">
+                                        <li> <a href="#fr_vente_comptant" class="brice btn boutton ">Comptant</a></li>
+                                        <li> <a href="#fr_vente_credit" class="brice btn boutton ">Crédit</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#fr_reglement" class="brice btn boutton "> <img src="img/reglement.png" alt="logo"> reglement</a>
+                                </li>
+                                <li>
+                                    <a href="#fr_inventaire" class="brice btn boutton "><img src="img/inventaire.png" alt="logo"> inventaires</a>
+                                </li>
+
+                                
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light md-light border-bottom" id="barre_menu">
+                <button class="btn " id="menu-toggle"> Menu</button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#fr_register"> <img src="img/util.png" alt="logo">S'enregistrer<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container" >
+
+               <DIV id="content"></DIV>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+
+
+
+
+
+
+    <script src="js/navigation.js"></script>
+   
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
